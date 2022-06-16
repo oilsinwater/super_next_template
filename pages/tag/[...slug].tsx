@@ -38,7 +38,7 @@ interface TagIndexProps {
 
 const TagIndex = ({ cmsData }: TagIndexProps) => {
   const router = useRouter()
-  if (router.isFallback) return <div>Loading...</div>
+  if (router.isFallback) return <div>Loading....</div>
 
   const { tag, posts, settings, seoImage, bodyClass } = cmsData
   const { meta_title, meta_description } = tag
